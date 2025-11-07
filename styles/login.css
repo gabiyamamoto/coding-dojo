@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 400px;
+    margin: 210px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px rgb(53, 53, 53, 0.3);
+}
+
+h2 {
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+input {
+    padding: 10px;
+    margin-left: 70px;
+    border-radius: 3px;
+    border-color: rgb(224, 224, 224);
+    max-width: 70%;
+}
+
+label {
+    margin: 10px auto 7px 70px;
+}
+
+.faca-login {
+    margin-bottom: 15px;
+}
+
+.senha {
+    margin: 15px;
+    color: #764ba2;
+}
+
+button {
+    padding: 12px 140px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cadastro-bloco {
+    flex-direction: row;
+}
+
+.cadastrar {
+    margin: 20px auto;
+}
+
+.cadastrar a {
+    color: #764ba2;
+}
