@@ -27,6 +27,7 @@ body {
 h2 {
     margin: 10px;
     margin-top: 40px;
+    cursor: context-menu;
 }
 
 .form {
@@ -39,21 +40,30 @@ input {
     padding: 10px;
     margin-left: 70px;
     border-radius: 3px;
-    border-color: rgb(224, 224, 224);
+    border: 2px solid rgb(206, 206, 206);
     max-width: 70%;
+    font-size: 15px;
+    outline: none;
 }
 
 label {
-    margin: 10px auto 7px 70px;
+    margin: 5px auto 7px 70px;
 }
 
 .faca-login {
     margin-bottom: 15px;
+    cursor: context-menu;
+}
+
+.senha-bloco {
+    display: flex;
+    justify-content: center;
 }
 
 .senha {
-    margin: 15px;
+    margin: 17px;
     color: #764ba2;
+    font-size: 15px;
 }
 
 button {
@@ -65,12 +75,18 @@ button {
     cursor: pointer;
 }
 
+button p {
+    font-size: 15px;
+}
+
 .cadastro-bloco {
     flex-direction: row;
 }
 
 .cadastrar {
     margin: 20px auto;
+    font-size: 15px;
+    cursor: context-menu;
 }
 
 .cadastrar a {
