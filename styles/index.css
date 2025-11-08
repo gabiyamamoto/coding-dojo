@@ -7,97 +7,164 @@
     font-family: "Stack Sans Text", sans-serif;
 }
 
-body {
+body,
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: white;
 }
 
-.bloco-principal {
+.container-pai {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(53, 53, 53, 0.3);
+    overflow: hidden;
+}
+
+.bloco-login {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 420px;
-    width: 400px;
-    margin: 210px;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    background-color: white;
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 5px 5px 5px rgb(53, 53, 53, 0.3);
 }
 
-h2 {
-    margin: 10px;
-    margin-top: 40px;
+.bloco-login h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    cursor: context-menu;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    width: 440px;
+    width: 100%;
 }
 
 .form input {
     padding: 10px;
-    margin-left: 70px;
-    border-radius: 3px;
-    border-color: rgb(224, 224, 224);
-    max-width: 70%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(206, 206, 206);
+    width: 100%;
+    font-size: 15px;
+    outline: none;
 }
 
 .form label {
-    margin: 10px auto 7px 70px;
-}
-
-.faca-login {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 500;
 }
 
 .senha-lembrar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
-    width: 400px;
-    height: 40px;
-    flex-direction: row;
+    margin: 15px 0;
+    font-size: 14px;
+    width: 100%;
 }
 
 .lembrar-bloco {
-    color: rgb(121, 121, 121);
     display: flex;
-    flex-direction: row;
-    width: 220px;
-}
-
-.lembrar-bloco label {
-    padding-left: 6px;
+    align-items: center;
+    color: rgb(121, 121, 121);
 }
 
 .lembrar-bloco input {
-    margin-left: 50px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.lembrar-bloco label {
+    color: black;
+    margin-bottom: 0;
 }
 
 .senha {
     color: #764ba2;
+    text-decoration: none;
 }
 
 button {
-    margin: 10px;
-    padding: 12px 140px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
     border-radius: 7px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 15px;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .cadastro-bloco {
-    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .cadastrar {
-    font-size: 13px;
-    margin: 10px auto;
+    font-size: 14px;
 }
 
 .cadastrar a {
     color: #764ba2;
+    text-decoration: none;
+}
+
+.bloco-imagem {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloco-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    display: block;
+}
+
+.texto-imagem {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 30px 20px 20px;
+}
+
+.titulo {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    position: absolute;
+    top: 290px;
+    right: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.autoras {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 14px;
+    font-style: italic;
 }
